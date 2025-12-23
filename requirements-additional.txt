@@ -1,0 +1,4 @@
+-i http://10.136.217.175:8080/simple
+
+netskope
+windows
