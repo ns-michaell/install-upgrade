@@ -25,12 +25,6 @@ from client import Client
 # - C1655102 https://netskope.testrail.io/index.php?/cases/view/1655102 earlier build > earlier build > released build (chain upgrade)
 # - C2105126 https://netskope.testrail.io/index.php?/cases/view/2105126 hot fix   > released build
 #
-# pre-req
-#
-#   ensure to have environment variables prior to the runs
-#   > set USERNAME=michaell@netskope.com <-- important to have "netskope.com"
-#   > set PASSWORD=P@ssw0rd!
-#
 #   csv file
 #   - get it from https://kibana.netskope.io/s/epdlp/app/dashboards#/view/16d7a160-4336-11ef-80d2-135fd25b6188?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-1d,to:now))
 #
@@ -611,5 +605,6 @@ class TestInstallUpgrade():
         time_to_wait = 180
         pytest.logger.info(f"wait for additional {time_to_wait} seconds for things to finish")
         time.sleep(time_to_wait)
+
 
         # pdb.set_trace()
